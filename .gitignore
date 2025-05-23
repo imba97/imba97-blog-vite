@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+dist
+*.local
+.idea
+.presite
+dist-ssr
+.vite-ssg-temp
+temp
+drafts
+*.log
+public/assets/fonts
+.eslintcache
+.auto-generate
