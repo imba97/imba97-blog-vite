@@ -1,8 +1,6 @@
 <template>
   <main class="prose" mx-a px-4>
-    <PostsProvider>
-      <RouterView />
-    </PostsProvider>
+    <RouterView />
   </main>
 </template>
 

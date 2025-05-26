@@ -1,14 +1,19 @@
 <template>
-  <div />
+  <ListPosts />
 </template>
 
 <script lang="ts" setup>
+import { usePostsStore } from '~/store/post'
+
 const route = useRoute()
-const router = useRouter()
+const postsStore = usePostsStore()
 
-// eslint-disable-next-line unused-imports/no-unused-vars
-const page = route.params.page
+const currentPage = computed(() => {
+  const pageParam = (route.params as any).page as string | undefined
+  return pageParam ? Number.parseInt(pageParam, 10) : 1
+})
 
-// eslint-disable-next-line no-console
-console.log(router)
+onMounted(() => {
+  postsStore.setPage(currentPage.value)
+})
 </script>
