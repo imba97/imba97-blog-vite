@@ -64,7 +64,6 @@ export default defineConfig({
       imports: [
         'vue',
         'pinia',
-        'vue-router',
         '@vueuse/core',
         VueRouterAutoImports
       ],
