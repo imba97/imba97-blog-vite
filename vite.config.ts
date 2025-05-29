@@ -139,7 +139,13 @@ export default defineConfig({
   ],
   ...({
     ssgOptions: {
-      formatting: 'minify'
+      formatting: 'minify',
+      includedRoutes(paths: string[]) {
+        // 只保留 /posts/{id} 形式的路由
+        return paths.filter((filePath) => {
+          return /^\/posts\/\d+$/.test(filePath)
+        })
+      }
     }
   }),
   resolve: {
