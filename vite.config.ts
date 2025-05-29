@@ -52,9 +52,9 @@ export default defineConfig({
           })
 
           if (path.includes('posts') && !!data && !!data.id) {
-            const path = `/posts/${data.id}`
-            route.path = path
-            route.name = path
+            const newPath = `/posts/${data.id}`
+            route.path = newPath
+            route.name = newPath
           }
         }
       }
