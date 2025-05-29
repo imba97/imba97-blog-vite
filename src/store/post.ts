@@ -22,7 +22,21 @@ export const usePostsStore = defineStore('posts', () => {
   const total = computed(() => posts.value.length)
   const totalPages = computed(() => Math.ceil(total.value / size.value))
 
+  router.beforeEach((to) => {
+    if (to.name === '/') {
+      page.value = 1
+      return true
+    }
+  })
+
   watch(page, () => {
+    if (page.value === 1) {
+      router.push({
+        name: '/'
+      })
+      return
+    }
+
     router.push({
       name: '/page/[...page]',
       params: {
