@@ -14,17 +14,21 @@ categories:
 <div text="center 10 primary">你可以设置字体样式</div>
 ```
 
-<div text="center 10 primary">你可以设置字体样式</div>
+<div py-5>
+  <div text="center 10 primary">你可以设置字体样式</div>
+</div>
 
-<div mt-5></div>
+---
 
 ```html
 <div text-10 animate-bounce>轻松设置动画</div>
 ```
 
-<div text-10 animate-bounce>轻松设置动画</div>
+<div py-5>
+  <div text-10 animate-bounce>轻松设置动画</div>
+</div>
 
-<div mt-5></div>
+---
 
 ```html
 <div flex items-center justify-center gap-3>
@@ -41,7 +45,7 @@ categories:
 </div>
 ```
 
-<div flex items-center justify-center gap-3>
+<div my-5 flex items-center justify-center gap-3>
   <div>设置一个图标</div>
   <div i-mdi-emoticon-cool-outline h-10 w-10></div>
 
@@ -54,7 +58,7 @@ categories:
   <div>使用动画图标</div>
 </div>
 
-<div mt-5></div>
+---
 
 ```html
 <div py-5 rounded-xl flex items-center justify-center bg-gradient-to-b from-blue to-primary>
@@ -62,53 +66,58 @@ categories:
 </div>
 ```
 
-<div py-5 rounded-xl flex items-center justify-center bg-gradient-to-b from-blue to-primary>
-  <div text="10 white" tracking>来个渐变色</div>
+<div my-5>
+  <div py-5 rounded-xl flex items-center justify-center bg-gradient-to-b from-blue to-primary>
+    <div text="10 white" tracking>来个渐变色</div>
+  </div>
 </div>
 
-<div mt-5></div>
+---
 
-<div text="5 center">实现一个图片九宫格</div>
+<div my-5>
+  <div text="5 center">实现一个图片九宫格</div>
+</div>
 
 ```html
 <div mx-a mt-5 p-1 w-90 bg-white b="3 solid primary">
-  <div grid="~ cols-3" gap-1>
-    <img src="https://imba97.cn/uploads/2023/04/code-server-1.png" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/12/report-2023-3.png" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/12/report-2023-4.png" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/07/serialport-1-1.jpg" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/07/serialport-1-2.jpg" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/07/serialport-1-3.jpg" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/03/bitwarden-login-error-1.png" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2022/10/simple-zip-upload-1.png" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2018/08/switch_4.gif" m-0! w-30 h-30 object-cover>
+  <div grid="~ cols-3" gap-1 class="[&>img]:(m-0! w-30 h-30 object-cover)">
+    <img src="https://imba97.cn/uploads/2023/04/code-server-1.png">
+    <img src="https://imba97.cn/uploads/2023/12/report-2023-3.png">
+    <img src="https://imba97.cn/uploads/2023/12/report-2023-4.png">
+    <img src="https://imba97.cn/uploads/2023/07/serialport-1-1.jpg">
+    <img src="https://imba97.cn/uploads/2023/07/serialport-1-2.jpg">
+    <img src="https://imba97.cn/uploads/2023/07/serialport-1-3.jpg">
+    <img src="https://imba97.cn/uploads/2023/03/bitwarden-login-error-1.png">
+    <img src="https://imba97.cn/uploads/2022/10/simple-zip-upload-1.png">
+    <img src="https://imba97.cn/uploads/2018/08/switch_4.gif">
   </div>
 </div>
 ```
 
-<div text="5 center gray-3">其实不太适合这种大量重复的元素</div>
-
-<div mx-a mt-5 p-1 w-90 bg-white b="3 solid primary">
-  <div grid="~ cols-3" gap-1>
-    <img src="https://imba97.cn/uploads/2023/04/code-server-1.png" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/12/report-2023-3.png" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/12/report-2023-4.png" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/07/serialport-1-1.jpg" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/07/serialport-1-2.jpg" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/07/serialport-1-3.jpg" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2023/03/bitwarden-login-error-1.png" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2022/10/simple-zip-upload-1.png" m-0! w-30 h-30 object-cover>
-    <img src="https://imba97.cn/uploads/2018/08/switch_4.gif" m-0! w-30 h-30 object-cover>
+<div my-5>
+  <div mx-a p-1 w-90 bg-white b="3 solid primary">
+    <div grid="~ cols-3" gap-1 class="[&>img]:(m-0! w-30 h-30 object-cover)">
+      <img src="https://imba97.cn/uploads/2023/04/code-server-1.png">
+      <img src="https://imba97.cn/uploads/2023/12/report-2023-3.png">
+      <img src="https://imba97.cn/uploads/2023/12/report-2023-4.png">
+      <img src="https://imba97.cn/uploads/2023/07/serialport-1-1.jpg">
+      <img src="https://imba97.cn/uploads/2023/07/serialport-1-2.jpg">
+      <img src="https://imba97.cn/uploads/2023/07/serialport-1-3.jpg">
+      <img src="https://imba97.cn/uploads/2023/03/bitwarden-login-error-1.png">
+      <img src="https://imba97.cn/uploads/2022/10/simple-zip-upload-1.png">
+      <img src="https://imba97.cn/uploads/2018/08/switch_4.gif">
+    </div>
   </div>
 </div>
 
-<div mt-5></div>
+---
 
 <div text="5">做个好看的 Todo List</div>
 
 ```html
 <div text="10 primary" font-bold>我的计划</div>
-<div>
+
+<div my-5>
   <div flex items-center gap-1>
     <div i-ic-round-check-box h-8 w-8 bg-green></div>
     <div text="5 gray-3" decoration="line-through">hexo-unocss</div>
@@ -125,7 +134,8 @@ categories:
 ```
 
 <div text="10 primary" font-bold>我的计划</div>
-<div>
+
+<div my-5>
   <div flex items-center gap-1>
     <div i-ic-round-check-box h-8 w-8 bg-green></div>
     <div text="5 gray-3" decoration="line-through">hexo-unocss</div>
